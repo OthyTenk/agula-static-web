@@ -1,3 +1,4 @@
+import config from "../../next.config";
 import Image from "next/image";
 
 export default function Home() {
@@ -7,7 +8,7 @@ export default function Home() {
         <div className="flex  items-center justify-center w-[256px] h-[256px] rounded-lg border bg-white">
           <div className="flex flex-col">
             <Image
-              src="/assets/agula-logo.png"
+              src={`${config.basePath}/assets/agula-logo.png`}
               alt="Agula Logo"
               width={128}
               height={128}
